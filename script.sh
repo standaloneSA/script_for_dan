@@ -118,7 +118,7 @@ function ntp_settings() {
 echo "**** NTP SETTING ****" 
   if [ "$KERNEL" == "Linux" ] ; then 
     systemctl status ntpd
-    cat /etc/ntpd.conf
+    cat /etc/ntp.conf
   elif [ "$KERNEL" == "Darwin" ] ; then 
     cat /etc/ntp.conf
   else 
